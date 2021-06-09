@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forms</title>
+</head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+<style>
+  .box0, .box1, .box2, .box3, .box4{
+    font-family: sans-serif;
+  }
+  body{
+    background-image: url("images/globe.gif");
+    font-family: Sofia, sans-serif;
+    background-size: cover;
+    animation: change 124s infinite;
+  }
+  @keyframes change{
+    0%{
+      background-image: url("images/globe.gif");
+    }
+    25%{
+      background-image: url("images/flowing-river-bends.gif");
+    }
+    50%{
+      background-image: url("images/bird.jpeg");
+    }
+    75%{
+      background-image: url("images/amazing-aurora.gif");
+    }
+    100%{
+      background-image: url("images/globe.gif");
+    }
+  }
+  h2{
+    color: white;
+    font-family: cursive;
+    font-size: 29px;
+    text-align: center;
+  }
+  form{
+    background: yellow;
+    margin-left: 420px;
+    margin-right: 420px;
+    border: 3px solid blue;
+    height: 100vh;
+    padding-left: 100px;
+    padding-right: 100px;
+    animation: move 45s infinite;
+  }
+  @keyframes move{
+    from{
+      background: yellow;
+    }
+    to{
+      background: orangered;
+    }
+  }
+  #main-footer{
+    background: white;
+    padding: 12px;
+    font-family: "Times New Roman", sans-serif;
+    font-size: 23px;
+    font-weight: bolder;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    top: 100%;
+    animation: this 22s infinite;
+    color: black;
+  }
+  @keyframes this {
+    from{
+      background: white;
+      color: black;
+    }
+    to{
+      background: dimgray;
+      color: white;
+    }
+  }
+  .box0{
+    width: 100px;
+    height: 100px;
+    background: red;
+    text-align: center;
+    display: grid;
+    align-content: center;
+    font-size: 10px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    position: relative;
+    animation: bx0 12s infinite;
+    animation-fill-mode: forwards;
+  }
+  @keyframes bx0 {
+    0% {background: red; top: 0; left: 0;}
+    50% {background: magenta; top: 0; left: 260px}
+    75% {background: magenta; top: 0; right: 260px}
+    100% {background: orange; top: 0; left: 0;}
+  }
+  .box1{
+    width: 100px;
+    height: 100px;
+    background: red;
+    text-align: center;
+    display: grid;
+    align-content: center;
+    font-size: 10px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    position: relative;
+    animation: bx1 62s infinite;
+    animation-fill-mode: forwards;
+  }
+  @keyframes bx1 {
+    0% {background: red; top: 0; left: 0;}
+    50% {background: magenta; top: 0; left: 1600px}
+    100% {background: orange; top: 0; left: 0;}
+  }
+  .box2{
+    width: 100px;
+    height: 100px;
+    background: red;
+    text-align: center;
+    display: grid;
+    align-content: center;
+    font-size: 10px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    position: relative;
+    animation: bx2 62s infinite;
+    animation-fill-mode: forwards;
+  }
+  @keyframes bx2 {
+    0% {background: red; top: 0; right: 0;}
+    50% {background: magenta; top: 0; right: 1600px}
+    100% {background: orange; top: 0; right: 0;}
+  }
+  .box3{
+    width: 100px;
+    height: 100px;
+    background: red;
+    text-align: center;
+    display: grid;
+    align-content: center;
+    font-size: 10px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    position: relative;
+    animation: bx3 62s infinite;
+    animation-fill-mode: forwards;
+  }
+  @keyframes bx3 {
+    0% {background: red; top: 0; right: 0;}
+    50% {background: magenta; top: 0; right: 1600px}
+    100% {background: orange; top: 0; right: 0;}
+  }
+  .box4{
+    width: 100px;
+    height: 100px;
+    background: red;
+    text-align: center;
+    display: grid;
+    align-content: center;
+    font-size: 10px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    position: relative;
+    animation: bx4 62s infinite;
+    animation-fill-mode: forwards;
+  }
+  @keyframes bx4 {
+    0% {background: red; top: 0; left: 0;}
+    50% {background: magenta; top: 0; left: 1600px}
+    100% {background: orange; top: 0; left: 0;}
+  }
+</style>
+<body>
+<h2 style="text-align: center;">Registration Information</h2>
+<form action="lists.html"><br><br>
+  <label for="first-name">First Name:
+  <input type="text" id="first-name" placeholder="First name"><br><br>
+  </label>
+    <label for="second-name">Second Name:
+    <input type="text" id="second-name" placeholder="Second name"><br><br>
+    </label>
+    <label for="date-of-birth">Date Of Birth:
+    <input type="date" id="date-of-birth"><br><br>
+    </label>
+    <label for="email">Email Address:
+    <input type="email" id="email" placeholder="Email"><br><br>
+    </label>
+    <label for="male">Male
+    <input type="checkbox" id="male" name="gender" value="male"><br><br>
+    </label>
+    <label for="female">Female
+    <input type="checkbox" id="female" name="gender" value="female"><br><br>
+    </label>
+    <label for="other">Other
+    <input type="checkbox" id="other" name="gender" value="other" checked><br><br>
+    </label>
+    <label for="no-interest">Not interested
+    <input type="checkbox" id="no-interest" name="gender" value="no-interest"><br><br>
+    </label>
+
+    <input type="button" id="button" value="Submit"><br><br>
+  <input type="reset"><br><br>
+  <label for="password">Password: </label>
+  <input type="password" id="password"><br><br>
+  <input type="button"  value="Go" onclick="alert('How is class today:')"><br><br>
+  <label for="color">My favorite color</label>
+  <input type="color" id="color"><br><br>
+  <label for="datetime">
+    <input type= "datetime-local" id="datetime">
+  </label>
+</form>
+<br>
+<p style="color: purple; font-family: 'DejaVu Sans Mono for Powerline', sans-serif; text-align: center; font-size: 22px;">Click the link on the moving boxes.</p>
+<div class="box1" style="float: left;"><a href="links.html">Links</a></div>
+<div class="box2" style="float: right;"><a href="intro.html">Intro</a></div>
+<br><br><br><br><br><br>
+<div class="box0" style="margin: auto;"><a href="tables.html">Tables</a></div>
+<br><br><br>
+<div class="box3" style="float: right;"><a href="paragraphs.html">Paragraphs</a></div>
+<div class="box4" style="float: left;"><a href="lists.html">Lists</a></div>
+
+<br>
+<br><br>
+</body>
+<footer id="main-footer">Copyright 2021, WEBCLASH.</footer>
+</html>

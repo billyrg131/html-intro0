@@ -1,0 +1,17 @@
+body{
+    background: blue;
+}
+h2{
+    font-size: 29px;
+    font-family: cursive;
+    text-decoration: underline;
+}
+ul{
+    color: aqua;
+    font-family: sans-serif;
+    font-size: 24px;
+}
+ol{
+    color: aqua;
+    font-size: 24px;
+}

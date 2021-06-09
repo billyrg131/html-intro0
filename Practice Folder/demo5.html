@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Slides</title>
+</head>
+<style>
+    body, html{
+        height: 100%;
+        margin: 0;
+    }
+  .slide{
+      background-image: url("sky0.gif");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100%;
+      animation-name: change;
+      animation-iteration-count: infinite;
+      animation-delay: 2s;
+      animation-duration: 20s;
+  }
+  @keyframes change{
+      0%{background-image: url("sky0.gif")}
+      50%{background-image: url("amazing-aurora.gif")}
+      75%{background-image: url("globe.gif")}
+      100%{background-image: url("flowing-river-bends.gif")}
+  }
+</style>
+<style>
+</style>
+<body>
+<div class="slide"></div>
+<p>This is a presentation slide which changes photos</p>
+</body>
+</html>
